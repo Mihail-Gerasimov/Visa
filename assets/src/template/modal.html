@@ -1,0 +1,38 @@
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header border-0 d-flex flex-column align-items-start">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+
+        <div class="modal-block position-relative d-lg-block d-flex flex-column align-items-center">
+          <h2 class="h1 title-medium mb-1">Оставьте заявку</h2>
+          <p class="modal-text">Для сотрудничества с нами, оставьте номер телефона и ваше имя. Наш менеджер расскажет
+            вам все подробнее.</p>
+
+          <form action="" class="form-modal">
+            <input class="modal-input" placeholder="Ваше Имя" type="text">
+            <input class="modal-input" placeholder="+7 (___) ___ - __ - __" type="tel">
+
+            <label class="label-radio">
+              <input type="checkbox" name="people-number " class="real-radio ">
+              <div class="custom-radio"><img src="img/1-modal/chek.svg" alt=""></div>
+              <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+            </label>
+
+          </form>
+        </div>
+        <img class="modal-img position-absolute d-lg-block d-none" src="img/1-modal/modal-img.png" alt="">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal-thanks" style="display: none;">
+  <div class="modal-content d-flex flex-column justify-content-center align-items-center h-100 position-relative">
+    <img class="modal-picture mb-4" src="img/1-modal/ok.png" alt="">
+    <h3 class="title-medium mb-4 text-center">Заявка <br> отправлена</h3>
+    <p class="modal-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+    <img src="img/1-modal/close.png" class="closed position-absolute">
+  </div>
+</div>

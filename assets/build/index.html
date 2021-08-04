@@ -1,0 +1,457 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- foonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@400;700&family=Roboto:wght@500;900&display=swap"
+        rel="stylesheet">
+    <!-- foonts -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+    <title>Визы</title>
+</head>
+
+<body>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+      aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header border-0 d-flex flex-column align-items-start">
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    
+            <div class="modal-block position-relative d-lg-block d-flex flex-column align-items-center">
+              <h2 class="h1 title-medium mb-1">Оставьте заявку</h2>
+              <p class="modal-text">Для сотрудничества с нами, оставьте номер телефона и ваше имя. Наш менеджер расскажет
+                вам все подробнее.</p>
+    
+              <form action="" class="form-modal">
+                <input class="modal-input" placeholder="Ваше Имя" type="text">
+                <input class="modal-input" placeholder="+7 (___) ___ - __ - __" type="tel">
+    
+                <label class="label-radio">
+                  <input type="checkbox" name="people-number " class="real-radio ">
+                  <div class="custom-radio"><img src="img/1-modal/chek.svg" alt=""></div>
+                  <p class="custom-radio--text">Согласие на обработку своих персональных данных</p>
+                </label>
+    
+              </form>
+            </div>
+            <img class="modal-img position-absolute d-lg-block d-none" src="img/1-modal/modal-img.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="modal-thanks" style="display: none;">
+      <div class="modal-content d-flex flex-column justify-content-center align-items-center h-100 position-relative">
+        <img class="modal-picture mb-4" src="img/1-modal/ok.png" alt="">
+        <h3 class="title-medium mb-4 text-center">Заявка <br> отправлена</h3>
+        <p class="modal-text">Мы получили вашу заявку. <br> Наш менеджер свяжится с вами.</p>
+        <img src="img/1-modal/close.png" class="closed position-absolute">
+      </div>
+    </div>
+
+    <!-- nav -->
+    <nav class="navigation">
+        <div class="container">
+            <div class="navigation-line py-3 d-flex justify-content-between align-items-center position-relative">
+    
+                <img class="burder-menu d-md-none d-md-flex" src="img/2-nav/burger.png" alt="">
+                <img class="logo" src="img/2-nav/logo.png" alt="">
+    
+                <div class="navigation-block d-md-flex d-none">
+                    <a class="navigation-block__item me-lg-3 me-2" href="#coop">Преимущества</a>
+                    <a class="navigation-block__item me-lg-3 me-2" href="#cases">Наши кейсы</a>
+                    <a class="navigation-block__item me-lg-3 me-2" href="#job">Как мы работаем</a>
+                    <a class="navigation-block__item" href="#contacts">Контакты</a>
+                </div>
+    
+                <div class="navigation-block__mobile  d-none flex-column py-5 ps-3 position-absolute">
+                    <a class="navigation-block__item me-lg-3 mb-3" href="#coop">Преимущества</a>
+                    <a class="navigation-block__item me-lg-3 mb-3" href="#cases">Наши кейсы</a>
+                    <a class="navigation-block__item me-lg-3 mb-3" href="#job">Как мы работаем</a>
+                    <a class="navigation-block__item" href="#contacts">Контакты</a>
+                </div>
+    
+                <a class="number-desctop d-lg-inline-block d-none" href="tel:+78005001871">+7 (800)
+                    500-18-71</a>
+    
+                <a class="number-mobile d-lg-none d-flex" href="tel:+78005001871"><img src="img/2-nav/mob-nav.png"
+                        alt=""></a>
+            </div>
+        </div>
+    </nav>
+    <!-- nav -->
+
+    <!-- header -->
+    <section class="header mt-sm-2 mt-0 overflow-hidden position-relative">
+        <div class="container position-relative">
+            <div class="header-content">
+                <h1 class="title-header">Получите <br>
+                    <span>качественные заявки</span> <br>
+                    на оформление виз!
+                </h1>
+                <button class="btn-general d-sm-block d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">НУЖНЫ
+                    ЗАЯВКИ</button>
+            </div>
+            <img class="h-side-mob position-absolute" src="img/3-header/h-side-mob.png" alt="">
+            <img class="h-side position-absolute d-sm-block d-none" src="img/3-header/h-side.png" alt="">
+            <img class="h-comment position-absolute d-sm-block d-none" src="img/3-header/h-comment.png" alt="">
+        </div>
+        <img class="line-decoration position-absolute w-100" src="img/3-header/417.png" alt="">
+        <img class="line-decoration-mob position-absolute" src="img/3-header/line-decoration-mob.png" alt="">
+    </section>
+    <!-- header -->
+
+    <section id="coop" class="cooperation position-relative">
+        <div class="container">
+            <h1 class="title-medium mb-5">Сотрудничайте с нами,<br><span>и вы получите:
+                </span></h1>
+            <p class="cooperation-information position-relative mb-4">Поток реальных клиентов</p>
+            <p class="cooperation-information position-relative">Мы поможем вам и вашему бизнесу развиваться в верном
+                направлении, и увеличить
+                заработок!
+            </p>
+            <div class="cooperation-stage d-flex flex-wrap">
+                <div
+                    class="cooperation-stages__element position-relative d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                    <img class="cooperaton-stages__element--img mb-3" src="img/4-cooperation/coop-one.png" alt="">
+                    <p class="cooperation-stages__element--text">Наша команда имеет собственные ресурсы -
+                        от вас понадобятся только данные для связи</p>
+                    <div class="cooperation-stages__element--number position-absolute">01</div>
+                </div>
+                <div
+                    class="cooperation-stages__element position-relative d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                    <img class="cooperaton-stages__element--img mb-3" src="img/4-cooperation/coop-two.png" alt="">
+                    <p class="cooperation-stages__element--text">Работаем с собственной CRM-системой. Прием лидов происходит
+                        в реальном времени</p>
+                    <div class="cooperation-stages__element--number position-absolute">02</div>
+                </div>
+                <div
+                    class="cooperation-stages__element position-relative d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                    <img class="cooperaton-stages__element--img mb-3" src="img/4-cooperation/coop-three.png" alt="">
+                    <p class="cooperation-stages__element--text">Наши лиды приносят
+                        заказчикам от 20 до 40% встреч и переговоров от общего числа лидов</p>
+                    <div class="cooperation-stages__element--number position-absolute">03</div>
+                </div>
+                <div
+                    class="cooperation-stages__element position-relative d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                    <img class="cooperaton-stages__element--img mb-3" src="img/4-cooperation/coop-four.png" alt="">
+                    <p class="cooperation-stages__element--text">Мы проводим работу
+                        со всеми городами
+                        в РФ и приводим до 100 заявок в зависимости
+                        от региона</p>
+                    <div class="cooperation-stages__element--number position-absolute">04</div>
+                </div>
+                <div
+                    class="cooperation-stages__element position-relative d-flex flex-column align-items-center justify-content-center mx-auto mb-3">
+                    <img class="cooperaton-stages__element--img mb-3" src="img/4-cooperation/coop-five.png" alt="">
+                    <p class="cooperation-stages__element--text">Нами задействуются все регионы России для генерации лидов
+                    </p>
+                    <div class="cooperation-stages__element--number position-absolute">05</div>
+                </div>
+            </div>
+        </div>
+        <button class="btn-general btn-cooperation d-sm-none d-block position-absolute" data-bs-toggle="modal"
+            data-bs-target="#staticBackdrop">НУЖНЫ ЗАЯВКИ</button>
+        <img class="coop-abs position-absolute" src="img/4-cooperation/coop-abs.png" alt="">
+    </section>
+
+    <section class="more">
+        <div class="container position-relative">
+            <div
+                class="more-block d-flex justify-content-lg-end justify-content-around flex-md-row flex-column position-relative align-items-lg-stretch align-items-center">
+                <div class="more-info position-relative mb-md-0 mb-5">
+                    <h3 class="more-info__title mb-1">Вам нужно <br>
+                        больше заявок?</h3>
+                    <p class="more-info-text">
+                        Не ждите, свяжитесь с нами <br> <span>уже сейчас!</span></p>
+                    <div class="more-next d-flex justify-content-center align-items-center position-absolute">
+                        <img src="img/5-more/more-arrow.png" alt="">
+                    </div>
+                </div>
+                <form action="" class="general-from more-form d-flex flex-column justify-content-between">
+                    <input class="general-form__input mb-lg-0 mb-md-1 mb-2" type="text" placeholder="Ваше имя">
+                    <input class="general-form__input mb-lg-0 mb-md-1 mb-2" type="tel" placeholder="Телефон">
+                    <button class="btn-general" type="submit">НУЖНЫ ЗАЯВКИ</button>
+                </form>
+                <img class="more-abs position-absolute d-sm-block d-none" src="img/5-more/more-abs.png" alt="">
+                <img class="woman-abs position-absolute" src="img/5-more/woman-abs.png" alt="">
+                <img class="more-abs-mobile position-absolute d-sm-none d-block" src="img/5-more/more-abs-mobile.png"
+                    alt="">
+            </div>
+            <!-- <img class="woman-abs position-absolute" src="../img/5-more/woman-abs.png" alt=""> -->
+        </div>
+    </section>
+
+    <section id="cases" class="cases position-relative">
+        <div class="container">
+            <h2 class="title-cases position-absolute">
+                Наши кейсы
+            </h2>
+            <!-- <h2 class="title-general d-block d-lg-none title-cases__mobile">
+                Наши кейсы
+            </h2> -->
+            <div
+                class="cases-block d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between justify-content-xxl-end">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Казань</h4>
+                    <div class="mb-3 mb-xl-4 d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">411</h2>
+                        <p class="applications-per-month__item">заявок <br> в месяц</p>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">61</h2>
+                        <p class="applications-per-month__item">договор на <br> оформление <br> виз</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="mb-3 mb-sm-5" src="img/6-cases/c-1-1.png" alt="">
+                    <img src="img/6-cases/c-1-2.png" alt="">
+                </div>
+            </div>
+    
+            <div
+                class="cases-block d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between justify-content-xxl-end">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Санкт-Петербург</h4>
+                    <div class="mb-3 mb-xl-4 d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">553</h2>
+                        <p class="applications-per-month__item">заявок <br> в месяц</p>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">83</h2>
+                        <p class="applications-per-month__item">договор на <br> оформление <br> виз</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="mb-3 mb-sm-5" src="img/6-cases/c-2-1.png" alt="">
+                    <img src="img/6-cases/c-2-2.png" alt="">
+                </div>
+            </div>
+    
+            <div
+                class="cases-block d-flex flex-column flex-sm-row justify-content-start justify-content-sm-between justify-content-xxl-end mb-0">
+                <div class="block__cities">
+                    <h4 class="cities-title">г. Уфа</h4>
+                    <div class="mb-3 mb-xl-4 d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">386</h2>
+                        <p class="applications-per-month__item">заявок <br> в месяц</p>
+                    </div>
+                    <div class="d-flex flex-column flex-sm-row align-items-start align-items-sm-center">
+                        <h2 class="cases-nubber mb-2 mb-sm-0 me-0 me-sm-3">58</h2>
+                        <p class="applications-per-month__item">договор на <br> оформление <br> виз</p>
+                    </div>
+                </div>
+                <div class="block-statistics">
+                    <img class="mb-3 mb-sm-5" src="img/6-cases/c-3-1.png" alt="">
+                    <img src="img/6-cases/c-3-2.png" alt="">
+                </div>
+            </div>
+        </div>
+        <img class="b-line position-absolute d-sm-block d-none" src="img/6-cases/bottom-line.png" alt="">
+        <img class="b-line-mob position-absolute d-sm-none d-block" src="img/6-cases/bottom-line-mob.png" alt="">
+        <!-- <img class="c-abs-all position-absolute" src="../img/6-cases/c-abs-all-2.png" alt=""> -->
+    </section>
+
+    <section id="job" class="jobs position-relative">
+        <div class="container">
+            <h2 class="title-medium jobs-title">Как мы работаем над привлечением клиентов<br><span>для вашего бизнеса по
+                    оформлению
+                    виз?</span></h2>
+            <div class="jobs-steps d-flex align-items-start justify-content-between">
+                <p class="jobs-steps-text">Изучите шаги, которые используют наши специалисты для привлечения вашему бизнесу
+                    потенциальных клиентов.</p>
+                <button class="btn-general d-md-block d-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">нужны
+                    заявки</button>
+            </div>
+    
+            <div class="jobs-number position-relative">
+                <div class="jobs-number-block d-flex">
+    
+                    <div class="jobs-number-block__item d-flex align-items-start">
+                        <img class="jobs-number-block__element me-2" src="img/7-jobs/j-one.png" alt="">
+                        <p class="jobs-number-block__text">Команда специалистов подготавливается к работе с вашей нишей.
+                            Производится генерация лидов и запуск аналитики</p>
+                    </div>
+    
+                    <div class="jobs-number-block__item d-flex align-items-start">
+                        <img class="jobs-number-block__element me-2" src="img/7-jobs/j-two.png" alt="">
+                        <p class="jobs-number-block__text">Настройка и запуск CRM-системы. Специалисты вводят CRM-систему и
+                            предоставляют доступ клиенту
+                        </p>
+                    </div>
+    
+                    <div class="jobs-number-block__item d-flex align-items-start">
+                        <img class="jobs-number-block__element me-2" src="img/7-jobs/j-three.png" alt="">
+                        <p class="jobs-number-block__text">Подключается трафик. Специалисты запускают трафик
+                            в работу, автоматически начинают приходить заявки</p>
+                    </div>
+    
+                </div>
+    
+                <div class="jobs-number-block-two d-flex justify-content-end">
+    
+                    <div class="jobs-number-block__item--two d-flex align-items-start">
+                        <p class="jobs-number-block__text me-2">Применяются альтернативные пути
+                            и ресурсы, создаются креативы, баннеры, проводится A/B-тестирование</p>
+                        <img class="jobs-number-block__element" src="img/7-jobs/j-four.png" alt="">
+                    </div>
+    
+                    <div class="jobs-number-block__item--two d-flex align-items-start ms-3">
+                        <p class="jobs-number-block__text me-2">Настройка и поддержка таргета в Instagram и Facebook,
+                            приносящие
+                            больше клиентов и прибыли
+                        </p>
+                        <img class="jobs-number-block__element" src="img/7-jobs/j-five.png" alt="">
+                    </div>
+    
+                    <div class="jobs-number-block__item--two d-flex align-items-start ms-3">
+                        <p class="jobs-number-block__text me-2">Создание и ведение рекламных кампаний в Яндекс и Google Ads,
+                            которые приносят высокий результат</p>
+                        <img class="jobs-number-block__element" src="img/7-jobs/j-six.png" alt="">
+                    </div>
+    
+                </div>
+    
+                <img class="jobs-line-r position-absolute" src="img/7-jobs/jobs-line-right.png" alt="">
+            </div>
+    
+            <div class="jobs-steps-mob mb-md-0 mb-5">
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">01</h1>
+                    <p class="jobs-number-block__text mt-0">Команда специалистов подготавливается к работе с вашей нишей.
+                        Производится генерация лидов и запуск аналитики</p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-1-mob.png" alt="">
+                </div>
+    
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">02</h1>
+                    <p class="jobs-number-block__text mt-0">Настройка и запуск CRM-системы. Специалисты вводят CRM-систему и
+                        предоставляют доступ клиенту
+                    </p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-2-mob.png" alt="">
+                </div>
+    
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">03</h1>
+                    <p class="jobs-number-block__text mt-0">Подключается трафик. Специалисты запускают трафик в работу,
+                        автоматически начинают приходить заявки</p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-3-mob.png" alt="">
+                </div>
+    
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">04</h1>
+                    <p class="jobs-number-block__text mt-0">Создание и ведение рекламных кампаний в Яндекс и Google Ads,
+                        которые приносят высокий результат</p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-4-mob.png" alt="">
+                </div>
+    
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">05</h1>
+                    <p class="jobs-number-block__text mt-0">Настройка и поддержка таргета в Instagram и Facebook, приносящие
+                        больше клиентов и прибыли
+                    </p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-5-mob.png" alt="">
+                </div>
+    
+                <div class="jobs-steps-mob__item position-relative">
+                    <h1 class="title-jobs__number mb-3">06</h1>
+                    <p class="jobs-number-block__text mt-0">Применяются альтернативные пути
+                        и ресурсы, создаются креативы, баннеры, проводится A/B-тестирование</p>
+                    <img class="j-mob-img position-absolute" src="img/7-jobs/j-6-mob.png" alt="">
+                </div>
+            </div>
+            <button class="btn-general d-md-none d-block mx-auto" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">нужны заявки</button>
+    
+        </div>
+    </section>
+
+    <section id="contacts" class="form position-relative">
+        <div class="container">
+            <div class="form-block position-relative d-md-block d-flex justify-content-center">
+    
+                <form action="" class="general-from form-form d-flex flex-column">
+                    <h2 class="title-medium title-form text-center mb-3">Укажите свои данные <br>
+                        для связи</h2>
+                    <p class="form-info text-center mb-2">Наш менеджер свяжется с вами в ближайшее время</p>
+                    <input class="general-form__input mb-2" type="text" placeholder="Ваше имя">
+                    <input class="general-form__input mb-2" type="tel" placeholder="Телефон">
+                    <button class="btn-general btn-from" type="submit">Хочу получать заявки</button>
+                </form>
+    
+                <img class="f-woman position-absolute d-md-block d-none" src="../img/8-form/f-woman.png" alt="">
+            </div>
+        </div>
+        <img class="j-line-top position-absolute d-sm-block d-none" src="img/7-jobs/j-line-bot.png" alt="">
+        <img class="j-line-top-mob position-absolute d-sm-none d-block" src="img/7-jobs/j-line-bot-mob.png" alt="">
+        <img class="f-bot-line position-absolute d-sm-block d-none" src="img/8-form/f-bot-line.png" alt="">
+        <img class="f-bot-line-mob position-absolute d-sm-none d-block" src="img/8-form/f-bot-line-mob.png" alt="">
+    </section>
+
+    <section class="contacts">
+        <div class="container">
+    
+            <div
+                class="contacts-block d-flex align-items-center justify-content-center justify-content-md-around flex-column flex-md-row">
+                <div class="contacts-information">
+                    <h2 class="title-medium contacts-title mb-3 mb-lg-4">Остались вопросы?</h2>
+                    <p class="contacts-text">Обращайтесь к нам — мы дадим вам всю необходимую информацию о том, как мы
+                        будем привлекать для вас клиентов
+                    </p>
+    
+                    <div class="messenger d-flex flex-md-row flex-column align-items-center">
+                        <div class="messenger-item d-flex align-items-center justify-content-md-start">
+                            <a href=""><img class="social me-2 me-lg-3" src="img/9-contacts/c-whats_app.png" alt=""></a>
+                            <a href=""><img class="social me-2 me-lg-3" src="img/9-contacts/c-viber.png" alt=""></a>
+                            <a href=""><img class="social" src="img/9-contacts/c-telega.png" alt=""></a>
+                        </div>
+                        <a class="contacts-number" href="tel:+78005001871">+7 (800) 500-18-71 <br>Ldigital.ru</a>
+                    </div>
+                </div>
+    
+                <div class="important d-flex flex-column align-items-center mx-auto mx-sm-0">
+                    <img class="mb-5" src="img/9-contacts/error.png" alt="">
+                    <h3 class="important-title mb-4">Важно</h3>
+                    <p class="important-text">
+                        Мы берем
+                        <span>только одного <br> партнера</span> в вашем регионе <br> и
+                        <span>не работаем с конкурентами</span>
+                    </p>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+    <footer class="footer py-md-4 py-3">
+        <div class="container">
+            <p class="footer-text">Все права защищены. Мы используем политику конфиденциальности</p>
+        </div>
+    </footer>
+
+
+
+    <!-- J-query -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <!-- J-query -->
+
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+    <script src="js/main.min.js"></script>
+</body>
+
+</html>

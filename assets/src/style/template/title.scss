@@ -1,0 +1,38 @@
+.title-medium {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 50px;
+    line-height: 115.5%;
+    color: #ce2f27;
+}
+.title-medium span {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 40px;
+    line-height: 115.5%;
+    color: #142239;
+}
+@media (max-width: 992px) {
+    .title-medium {
+        font-size: 45px;
+    }
+    .title-medium span {
+        font-size: 35px;
+    }
+}
+@media (max-width: 767px) {
+    .title-medium {
+        font-size: 35px;
+    }
+    .title-medium span {
+        font-size: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .title-medium {
+        font-size: 25px;
+    }
+    .title-medium span {
+        font-size: 20px;
+    }
+}
