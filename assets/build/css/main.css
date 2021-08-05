@@ -11138,6 +11138,11 @@ button:focus {
   letter-spacing: 0.03em;
   color: #ffffff; }
 
+.btn-modal {
+  max-width: 235px;
+  padding: 12px 0;
+  font-size: 20px; }
+
 .modal-dialog {
   max-width: 900px; }
 
@@ -11564,7 +11569,9 @@ button:focus {
     font-size: 14px;
     line-height: 17px;
     max-width: 300px;
-    text-align: center; } }
+    text-align: center; }
+  .btn-modal {
+    max-width: inherit; } }
 
 @media (max-width: 850px) {
   .block-statistics img {
@@ -11882,7 +11889,10 @@ button:focus {
     padding: 15px 0 15px 20px;
     margin-bottom: 20px; }
   .custom-radio--text {
-    width: 200px; } }
+    width: 200px; }
+  .modal-header .btn-close {
+    top: 10px;
+    right: 10px; } }
 
 @media (max-width: 475px) {
   .line-decoration {

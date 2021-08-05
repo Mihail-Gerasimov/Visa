@@ -475,6 +475,9 @@
         max-width: 300px;
         text-align: center;
     }
+    .btn-modal {
+        max-width: inherit;
+    }
     // modal
 }
 @media (max-width: 850px) {
@@ -935,6 +938,11 @@
     }
     .custom-radio--text {
         width: 200px;
+    }
+
+    .modal-header .btn-close {
+        top: 10px;
+        right: 10px;
     }
     // modal
 }
